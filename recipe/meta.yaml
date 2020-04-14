@@ -35,6 +35,8 @@ test:
 
 about:
   home: https://github.com/pcdshub/happi 
+  dev_url: https://github.com/pcdshub/happi 
+  doc_url: https://pcdshub.github.io/happi
   license: SLAC Open
   license_family: OTHER
   license_file: LICENSE.md
