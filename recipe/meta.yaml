@@ -26,6 +26,7 @@ requirements:
     - prettytable
     - simplejson
     - coloredlogs
+    - ipython
 
 test:
   imports:
