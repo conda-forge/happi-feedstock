@@ -1,5 +1,5 @@
 {% set name = "happi" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,14 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 6135928358a329e715758624cfcc95c902d4ddc936bc8e29dd2d356874611153
+  sha256: 7cffc473b40e0c6e7ea2281eec279a953fdf034158919ab34cb6336397127fa1
 
 build:
   noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
+  entry_points:
+    - happi = happi.cli:main
 
 requirements:
   host:
@@ -24,13 +26,18 @@ requirements:
     - prettytable
     - simplejson
     - coloredlogs
+    - ipython
 
 test:
   imports:
     - happi 
+  commands:
+    - happi --help
 
 about:
   home: https://github.com/pcdshub/happi 
+  dev_url: https://github.com/pcdshub/happi 
+  doc_url: https://pcdshub.github.io/happi
   license: SLAC Open
   license_family: OTHER
   license_file: LICENSE.md
