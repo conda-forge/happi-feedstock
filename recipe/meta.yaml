@@ -1,5 +1,5 @@
 {% set name = "happi" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7cffc473b40e0c6e7ea2281eec279a953fdf034158919ab34cb6336397127fa1
+  sha256: d1fea41b003d5e3bef168c596cc768af2e33b01c5030ce73ec187cdb4fe0e129
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - simplejson
     - coloredlogs
     - ipython
+    - entrypoints
 
 test:
   imports:
