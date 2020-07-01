@@ -1,5 +1,5 @@
 {% set name = "happi" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d1fea41b003d5e3bef168c596cc768af2e33b01c5030ce73ec187cdb4fe0e129
+  sha256: f14bfe01024ec16a28865d65ea182ccd8f73624d6ce7db6107b31e65f8deb959
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - happi = happi.cli:main
 
@@ -31,18 +31,18 @@ requirements:
 
 test:
   imports:
-    - happi 
+    - happi
   commands:
     - happi --help
 
 about:
-  home: https://github.com/pcdshub/happi 
-  dev_url: https://github.com/pcdshub/happi 
+  home: https://github.com/pcdshub/happi
+  dev_url: https://github.com/pcdshub/happi
   doc_url: https://pcdshub.github.io/happi
   license: SLAC Open
   license_family: OTHER
   license_file: LICENSE.md
-  summary: 'Heuristic Access to Positions of Photon Instruments'
+  summary: Heuristic Access to Positions of Photon Instruments
 
 extra:
   recipe-maintainers:
