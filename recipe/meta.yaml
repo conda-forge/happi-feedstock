@@ -1,5 +1,5 @@
 {% set name = "happi" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: fa403b8cf08405172c39351ea6f5c730d9c646ae9c3706fb922db414f59869c3
+  sha256: a1dad18db9258d12155da8853a6f2adda3ecede6cd080d7d5d1ed76e50439604
 
 build:
   noarch: python
