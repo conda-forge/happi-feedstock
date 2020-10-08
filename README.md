@@ -5,11 +5,13 @@ Home: https://github.com/pcdshub/happi
 
 Package license: SLAC Open
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/happi-feedstock/blob/master/LICENSE.txt)
 
 Summary: Heuristic Access to Positions of Photon Instruments
 
+Development: https://github.com/pcdshub/happi
 
+Documentation: https://pcdshub.github.io/happi
 
 Current build status
 ====================
