@@ -1,5 +1,5 @@
 {% set name = "happi" %}
-{% set version = "1.8.3" %}
+{% set version = "1.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4428a0db5f344e36090efcd292ce4f98c8df66fed8cfcedf287d7012b6311901
+  sha256: 0a1da798d39e22b4dcb78c41f9dd0cfc1925ffdee3fd1347a78013ec3aaa9e4f
 
 build:
   noarch: python
@@ -38,8 +38,8 @@ about:
   home: https://github.com/pcdshub/happi
   dev_url: https://github.com/pcdshub/happi
   doc_url: https://pcdshub.github.io/happi
-  license: SLAC Open
-  license_family: OTHER
+  license: LicenseRef-BSD-3-Clause-SLAC
+  license_family: BSD
   license_file: LICENSE.md
   summary: Heuristic Access to Positions of Photon Instruments
 
