@@ -38,8 +38,8 @@ about:
   home: https://github.com/pcdshub/happi
   dev_url: https://github.com/pcdshub/happi
   doc_url: https://pcdshub.github.io/happi
-  license: SLAC Open
-  license_family: OTHER
+  license: LicenseRef-BSD-3-Clause-SLAC
+  license_family: BSD
   license_file: LICENSE.md
   summary: Heuristic Access to Positions of Photon Instruments
 
