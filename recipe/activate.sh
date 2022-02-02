@@ -1,9 +1,15 @@
+#!/bin/bash
 # This activates fzf-based fuzzy finding for happi searches.
 # This is meant to be sourced from bash.
 
+if [ "${SHELL}" != "bash" ]; then
+    echo -e "Only bash shell is supported. Used shell: ${SHELL}"
+    exit 1
+fi
+
 _fzf_complete_happi() {
   _fzf_complete --multi --reverse --prompt="happi> " -- "$@" < <(
-    python `which happi` search '*' --json 2>/dev/null |python -c '
+    python `which happi` search '*' --json 2>/dev/null | python -c '
 import json
 import sys
 items = json.load(sys.stdin)

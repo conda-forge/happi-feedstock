@@ -1,4 +1,6 @@
-$PYTHON setup.py install --single-version-externally-managed --record=record.txt
+#!/bin/bash
+
+$PYTHON -m pip install --no-deps -vv
 
 mkdir -p $PREFIX/etc/conda/activate.d
 mkdir -p $PREFIX/etc/conda/deactivate.d
