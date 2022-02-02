@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7240d9fb11719e6df01f9359f538d3e9ebc558258f3fe7cdbf5ff638568a0a32
+  sha256: 14b0173019cf066f15aff92e462762a71ba9be13dfc1cb70548195907a76115d
 
 build:
   noarch: python
