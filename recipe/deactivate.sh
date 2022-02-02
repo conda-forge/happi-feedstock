@@ -6,8 +6,8 @@ if [[ "${BASH}" =~ .*"bash" ]]; then
     # Do nothing
     :
 else
-    echo "Only bash shell is supported. Used shell: ${BASH}"
-    exit 1
+    echo "'happi' deactivation: only bash shell is supported. Used shell: ${BASH}"
+    return
 fi
 
 [ -n "$BASH" ] && complete -r happi
