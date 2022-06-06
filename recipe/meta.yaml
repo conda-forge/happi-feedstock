@@ -22,12 +22,12 @@ requirements:
   run:
     - python >=3.6
     - click
+    - coloredlogs
+    - entrypoints
+    - ipython
     - jinja2
     - prettytable
     - simplejson
-    - coloredlogs
-    - ipython
-    - entrypoints
 
 test:
   imports:
