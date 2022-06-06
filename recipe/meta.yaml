@@ -24,7 +24,6 @@ requirements:
     - click
     - coloredlogs
     - entrypoints
-    - ipython
     - jinja2
     - prettytable
     - simplejson
