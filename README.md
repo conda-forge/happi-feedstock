@@ -1,11 +1,11 @@
-About happi
-===========
+About happi-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/happi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pcdshub/happi
 
 Package license: LicenseRef-BSD-3-Clause-SLAC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/happi-feedstock/blob/main/LICENSE.txt)
 
 Summary: Heuristic Access to Positions of Photon Instruments
 
@@ -148,6 +148,7 @@ Feedstock Maintainers
 =====================
 
 * [@ZLLentz](https://github.com/ZLLentz/)
+* [@conda-forge/pcdsdevices](https://github.com/conda-forge/pcdsdevices/)
 * [@klauer](https://github.com/klauer/)
-* [@zrylettc](https://github.com/zrylettc/)
+* [@tangkong](https://github.com/tangkong/)
 
