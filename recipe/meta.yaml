@@ -51,6 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/pcdsdevices
-    - klauer
-    - tangkong
-    - ZLLentz
