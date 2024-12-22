@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - happi = happi.cli:main
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - click
     - coloredlogs
     - entrypoints
@@ -34,6 +34,8 @@ requirements:
     - pymongo >=4.0.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - happi
   commands:
