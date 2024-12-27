@@ -1,5 +1,6 @@
 {% set name = "happi" %}
 {% set version = "2.6.0" %}
+{% set python_min = "3.9 %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - click
     - coloredlogs
     - entrypoints
