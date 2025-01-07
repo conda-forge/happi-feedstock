@@ -1,5 +1,6 @@
 {% set name = "happi" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 39ed59e83663ddf98fcef1ec8fd9bd9e2a60149ec6f71a874cd51d6089d06072
+  sha256: 278b6446d62ba3de50658fa0fa181a6d6e7fe4cf7c10bbd490336f29947cc671
 
 build:
   noarch: python
@@ -17,11 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - click
     - coloredlogs
     - entrypoints
@@ -34,6 +36,8 @@ requirements:
     - pymongo >=4.0.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - happi
   commands:
